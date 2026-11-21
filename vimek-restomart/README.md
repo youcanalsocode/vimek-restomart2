@@ -11,7 +11,12 @@ Everything lives in `src/app/data/`:
 Empty email/address/hours/serviceArea are hidden automatically.
 
 ## Deploy on Vercel
-Import the repo; `vercel.json` already sets build command, output directory and SPA rewrites.
+1. Push this repo to GitHub (`youcanalsocode/vimek-restomart2`).
+2. In Vercel: **Add New Project** → import that repo.
+3. Leave Framework as Other / configured by `vercel.json`. Do not set a Root Directory — the repo-root `vercel.json` builds the nested `vimek-restomart` app and publishes `dist/vimek-restomart/browser`.
+4. Deploy. Routes (`/products`, `/contact`) rewrite to `index.html`.
+
+If you instead set Root Directory to `vimek-restomart` in the Vercel dashboard, the nested `vercel.json` is used.
 
 ## SEO
 Per-page title and description, Open Graph tags, JSON-LD Organization, robots.txt and sitemap.xml are included.

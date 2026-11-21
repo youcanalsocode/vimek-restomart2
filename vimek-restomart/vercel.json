@@ -1,2 +1,8 @@
-{ "buildCommand": "npm run build", "outputDirectory": "dist/vimek-restomart/browser",
-  "rewrites": [{ "source": "/((?!assets/|.*\\..*).*)", "destination": "/index.html" }] }
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/vimek-restomart/browser",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
