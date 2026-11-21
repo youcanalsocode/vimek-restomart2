@@ -1,0 +1,2 @@
+{ "buildCommand": "npm run build", "outputDirectory": "dist/vimek-restomart/browser",
+  "rewrites": [{ "source": "/((?!assets/|.*\\..*).*)", "destination": "/index.html" }] }

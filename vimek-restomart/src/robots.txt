@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vimekrestomart.vercel.app/sitemap.xml
